@@ -42,7 +42,7 @@ def send_request(url):
 
 # main flow starts from here
 def check_iphone(model, *args):
-  zipcode = '98033'
+  zipcode = '98004'
   uri = 'https://www.apple.com/shop/retail/pickup-message?pl=true&cppart=UNLOCKED/US&parts.0=%s&location=%s'
   url = uri % (model, zipcode)
 
@@ -65,8 +65,7 @@ def check_iphone(model, *args):
   if len(jresult['availableStores']) > 0:
     print("Detect an available iphone! SMS ...")
     from twilio.rest import Client
-
-    account_sid='ACfdc83d84cb014c7a7acb1a5fbed5dfbf'
+    account_sid='...'
     auth_token='...'
     recipient_mobile='+1...'
     sender_mobile='+1...'
