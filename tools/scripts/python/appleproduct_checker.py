@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+# python lib dependency: 
+# sudo pip install twilio
 import sys
 import os
 
